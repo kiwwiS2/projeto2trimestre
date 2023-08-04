@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .center{
@@ -12,15 +13,26 @@
     padding:0 2%;
 }
 
+html,body{
+    height:100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px 0;
+}
+
 header{
+    height: 200px;
     padding: 20px 0;
 }
 
 .logo{
     width: 80%;
 }
-
 .menu {
+    padding-top: 30px;
     width: 85%;
     text-align: right;
 }
@@ -29,8 +41,38 @@ header{
     text-decoration: none;
     font-weight: bold;
     margin-right: 15px;
+}
 img {
     width: 250px;
     height: 100px;
     object-fit: contain;
+}
+
+section.sobre{
+    height: calc(100% - 150px);
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    bottom: -300px;
+    right: -450px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color: #f87498;
+    }
+.extras img{
+    padding-top: 50px;
+    width: 490px;
+    height: 550px;
+    object-fit: contain;
+}
+
+.texto-sobre{
+    margin: top 300px;
+}
+
+.texto-sobre h1{
+    font-size: 50px;
 }
